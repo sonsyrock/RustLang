@@ -6,9 +6,13 @@ fn main(){
     
     
     println! ("Adivinhe o Número!");
+
     let secret_number = rand::thread_rng().gen_range(1..101); //Variável do número secreto que gera valores aleatórios
   
     println! ("O número secreto é: {}", secret_number);
+
+    loop {
+
     println! ("Favor digite um número:");
 
     let mut guess = String::new(); //guess é mutável e recebe o valor digitado pelo usuário
@@ -25,5 +29,8 @@ fn main(){
         Ordering::Less => println!("Muito pequeno"),
         Ordering::Greater => println! ("Muito grande"),
         Ordering::Equal => print! ("Você ganhou"),
+        }
+
     }
+
 }
