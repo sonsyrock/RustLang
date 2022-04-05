@@ -28,7 +28,12 @@ fn main(){
         
         Ordering::Less => println!("Muito pequeno"),
         Ordering::Greater => println! ("Muito grande"),
-        Ordering::Equal => print! ("Você ganhou"),
+        Ordering::Equal => {
+            
+            println! ("Você ganhou");
+            break;
+            }
+
         }
 
     }
