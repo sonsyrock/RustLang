@@ -74,7 +74,7 @@ fn main(){
     let segundo = array_c[1];
 
 
-    println! ("{}",primeiro);
+    println! ("{},{}",primeiro,segundo);
 
 }
 */
